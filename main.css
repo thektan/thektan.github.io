@@ -82,7 +82,7 @@ ul.navigation li a:hover {
 
 
 /***** WORK *****/
-.work-container {
+.project-container {
     background-color: #F7F7F7;
     padding: 100px 0 0 0;
     text-align: center;
@@ -90,11 +90,11 @@ ul.navigation li a:hover {
 }
 
 /* Make every other background white. */
-.work-container:nth-child(2n) {
+.project-container:nth-child(2n) {
     background-color: #fff;
 }
 
-.work-description-container {
+.project-description-container {
     display: inline-block;
     width: 400px;
     height: 400px;
@@ -103,7 +103,7 @@ ul.navigation li a:hover {
     margin-top: 20px;
 }
 
-.work-description-container h1 {
+.project-description-container h1 {
     font-weight: 400;
     font-size: 36px;
     color: #5C6A75;
@@ -111,7 +111,7 @@ ul.navigation li a:hover {
     padding: 0;
 }
 
-.work-description-container h2 {
+.project-description-container h2 {
     font-size: 16px;
     font-weight: 400;
     color: #9CB0C0;
@@ -119,7 +119,7 @@ ul.navigation li a:hover {
     padding: 0;
 }
 
-.work-description-container p {
+.project-description-container p {
     color: #5C6A75;
     line-height: 30px;
     margin-top: 30px;
@@ -145,7 +145,7 @@ a.project-link:hover {
     transition: all 0.2s ease-in-out;
 }
 
-.work-images-container {
+.project-images-container {
     display: inline-block;
     width: 550px;
     height: 400px;
@@ -153,7 +153,7 @@ a.project-link:hover {
     background-color: black;
 }
 
-.work-images-container:nth-of-type(2n) {
+.project-images-container:nth-of-type(2n) {
     margin-right: 0px;
     margin-left: 75px;
 }
