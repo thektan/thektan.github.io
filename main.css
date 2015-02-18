@@ -3,25 +3,162 @@
     Author     : Kevin Tan
 */
 body {
-    
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #3A3F42;
 }
 
-.navigation {
-    
+/***** NAVIGATION *****/
+#navigation-container {
+    display: block;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
 }
 
-.header-container {
-    
+ul.navigation {
+    display: inline-block;
 }
 
-.header-container .title-container {
-    
+ul.navigation li{
+    display: inline-block;
+    margin: 15px 30px;
 }
 
-.header-container .title-container .title {
-    
+/* Fix for extra space created on first element. */
+ul.navigation li:first-of-type {
+    margin-left: 15px;
 }
 
-.header-container .title-container .subtitle {
-    
+ul.navigation li a:link,
+ul.navigation li a:active,
+ul.navigation li a:visited {
+    padding: 15px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #3A3F42;
 }
+
+ul.navigation li a:hover {
+    color: #3493DD;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/***** HEADER *****/
+#header-container {
+    width: 100%;
+}
+
+#header-container .title-container {
+    margin: 300px 0;
+    text-align: center;
+}
+
+#header-container .title-container .title {
+    font-weight: 700;
+    font-size: 138px;
+}
+
+#header-container .title-container .subtitle {
+    display: inline-block;
+    background-color: #3A3F42;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+}
+
+
+/***** WORK *****/
+.work-container {
+    background-color: #F7F7F7;
+    padding: 100px 0 0 0;
+    text-align: center;
+    height: 400px;
+}
+
+/* Make every other background white. */
+.work-container:nth-child(2n) {
+    background-color: #fff;
+}
+
+.work-description-container {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.work-description-container h1 {
+    font-weight: 400;
+    font-size: 36px;
+    color: #5C6A75;
+    margin: 0;
+    padding: 0;
+}
+
+.work-description-container h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #9CB0C0;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.work-description-container p {
+    color: #5C6A75;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+a.project-link:link,
+a.project-link:active,
+a.project-link:visited {
+    display: inline-block;
+    background-color: #5C6A75;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+a.project-link:hover {
+    background-color: #3493DD;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.work-images-container {
+    display: inline-block;
+    width: 550px;
+    height: 400px;
+    margin-right: 75px;
+    background-color: black;
+}
+
+.work-images-container:nth-of-type(2n) {
+    margin-right: 0px;
+    margin-left: 75px;
+}
+
+
+/***** CONTACT *****/
+
+/***** FOOTER *****/
