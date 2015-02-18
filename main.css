@@ -160,5 +160,30 @@ a.project-link:hover {
 
 
 /***** CONTACT *****/
+#contact-container {
+    text-align: center;
+}
+
+#contact-button:link,
+#contact-button:active,
+#contact-button:visited {
+    display: inline-block;
+    background-color: #3A3F42;
+    color: #FFF;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 100px 0;
+    padding: 20px 40px;
+}
+
+#contact-button:hover {
+    background-color: #3493DD;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
 
 /***** FOOTER *****/
