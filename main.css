@@ -14,6 +14,10 @@ body {
 
 a {
     text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 /***** NAVIGATION *****/
@@ -91,6 +95,7 @@ ul.navigation li a:hover {
     padding: 100px 0 0 0;
     text-align: center;
     height: 400px;
+    overflow: hidden;
 }
 
 /* Make every other background white. */
@@ -151,12 +156,15 @@ a.project-link:hover {
 .project-images-container {
     display: inline-block;
     width: 550px;
-    height: 400px;
+    height: 495px;
     margin-right: 75px;
+    border: 5px solid #F7F7F7;
+    border-bottom: 0;
     background-color: #9CB0C0;
 }
 
 .project-images-container:nth-of-type(2n) {
+    border: 5px solid #FFF;
     margin-right: 0px;
     margin-left: 75px;
 }
@@ -170,6 +178,7 @@ a.project-link:hover {
 
 #other-projects-container h1 {
     font-size: 32px;
+    font-weight: 400;
     margin: 0 0 50px 0;
 }
 
@@ -198,15 +207,23 @@ a.project-link:hover {
     height: 200px;
     margin-top: 10px;
     background-color: #F7F7F7;
-    border: solid 5px #F7F7F7;
+    border: solid 3px #F7F7F7;
 }
 
 #other-projects-container .other-project:hover h2 {
     color: #3493DD;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 #other-projects-container .other-project:hover .other-project-image {
-    border: solid 5px #3493DD;
+    border: solid 3px #3493DD;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -238,10 +255,33 @@ a.project-link:hover {
 }
 
 
-
-
-
 /***** FOOTER *****/
 #footer-container {
-    
+    padding: 30px 50px;
+    font-size: 14px;
+    background-color: #3A3F42; 
+    color: #F7F7F7;
+}
+
+#footer-container a:link,
+#footer-container a:active,
+#footer-container a:visited {
+    color: #F7F7F7;
+    opacity: 0.5;
+    margin: 0 10px;
+}
+
+#footer-container a:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.credits {
+    font-size: 13px;
+    float: right;
+    color: #F7F7F7;
+    opacity: 0.5;
 }
