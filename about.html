@@ -8,13 +8,13 @@
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    <body id="about-page">
         <!-- NAVIGATION -->
         <div id="navigation-container">
             <ul class="navigation">
-                <li><a href="/about">ABOUT</a></li>
-                <li><a href="/projects">PROJECTS</a></li>
-                <li><a href="mailto:codebytan@gmail.com">CONTACT</a></li>
+                <li class="current-page">ABOUT</li>
+                <li class="non-current-page"><a href="/">PROJECTS</a></li>
+                <li class="non-current-page"><a href="mailto:codebytan@gmail.com">CONTACT</a></li>
             </ul>
         </div>
         
@@ -22,14 +22,22 @@
         <!-- HEADER -->
         <div id="header-container">
             <div class="title-container">
-                <div class="subtitle">UNDER CONSTRUCTION</div>
+                <div class="title">ABOUT ME</div>
             </div>
         </div>
 
+        <!-- CONTENT -->
+        <div class="content-container">
+            <img src="images/profile.jpg" alt="profile image"/>
+            <p>
+                Hello! I'm Kevin Tan, a web designer and developer who also has a passion for food and photography (which includes food photography). I recently obtained a B.S. in Computer Science at San José State University this past December 2014. Most of my time is spent browsing through tens, maybe hundreds of websites every day and it still continues to fascinate me what others are able to create in a website. It's inspiring to see what's possible with HTML, CSS, Javascript, PHP, Java, and the many other programming languages out there. When I discover websites with great user experience, I hope to be able to bring the same positive feelings to users that view websites I've created.   
+            </p>
+        </div>
         
         <!-- CONTACT -->
         <div id="contact-container">
             <a id="contact-button" href="mailto:codebytan@gmail.com">SEND ME A MESSAGE</a>
+            <span class="contact-button-caption">CODEBYTAN@GMAIL.COM</span>
         </div>
         
         

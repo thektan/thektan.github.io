@@ -63,6 +63,25 @@ ul.navigation li a:hover {
     transition: all 0.2s ease-in-out;
 }
 
+ul.navigation li.current-page {
+    padding: 15px 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #3A3F42;
+}
+
+ul.navigation li.non-current-page {
+    opacity: 0.5;
+}
+
+ul.navigation li.non-current-page:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
 
 /***** HEADER *****/
 #header-container {
@@ -86,6 +105,36 @@ ul.navigation li a:hover {
     font-size: 16px;
     letter-spacing: 2px;
     padding: 10px 20px;
+}
+
+
+/***** ABOUT PAGE *****/
+#about-page #header-container .title-container .title {
+    font-weight: 400;
+    font-size: 45px;
+}
+
+#about-page #header-container .title-container {
+    margin: 200px 0 100px 0;
+}
+
+#about-page .content-container {
+    width: 1050px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about-page .content-container img {
+    width: 1050px;
+}
+
+#about-page .content-container p {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 32px;
+    width: 600px;
+    text-align: left;
+    margin: 50px 0 100px 0;
 }
 
 
@@ -232,6 +281,7 @@ a.project-link:hover {
 #contact-container {
     text-align: center;
     background-color: #F7F7F7;
+    padding: 100px 0;
 }
 
 #contact-button:link,
@@ -240,10 +290,9 @@ a.project-link:hover {
     display: inline-block;
     background-color: #3A3F42;
     color: #FFF;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
     text-decoration: none;
-    margin: 100px 0;
     padding: 20px 40px;
 }
 
@@ -253,6 +302,14 @@ a.project-link:hover {
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+}
+
+.contact-button-caption {
+    display: block;
+    color: #979797;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 10px 0;
 }
 
 
