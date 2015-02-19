@@ -156,7 +156,7 @@ a.project-link:hover {
 .project-images-container {
     display: inline-block;
     width: 550px;
-    height: 495px;
+    height: 400px;
     margin-right: 75px;
     border: 5px solid #F7F7F7;
     border-bottom: 0;
@@ -180,6 +180,7 @@ a.project-link:hover {
     font-size: 32px;
     font-weight: 400;
     margin: 0 0 50px 0;
+    color: #3A3F42;
 }
 
 #other-projects-container .other-project {
@@ -189,9 +190,9 @@ a.project-link:hover {
 }
 
 #other-projects-container .other-project h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    color: #5C6A75;
+    color: #3A3F42;
     margin: 0;
 }
 
