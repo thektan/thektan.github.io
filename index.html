@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     </head>
@@ -138,13 +139,15 @@
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
         <script>
-            $(document).ready(function (){
-                $(".projects-nav-button").click(function (){
-                    //$(this).animate(function(){
-                        $('html, body').animate({
-                            scrollTop: $("#project-header").offset().top
-                        }, 1000);
-                    //});
+            $(document).ready(function ()
+            {
+                $(".projects-nav-button").click(function ()
+                {
+                        $('html, body').animate
+                        (
+                            { scrollTop: $("#project-header").offset().top }, 
+                            500
+                        );
                 });
             });
         </script>
