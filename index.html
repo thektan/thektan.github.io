@@ -15,7 +15,7 @@
             <ul class="navigation">
                 <li><a href="/about">ABOUT</a></li>
                 <li><a class="projects-nav-button" href="#projects">PROJECTS</a></li>
-                <li><a href="mailto:codebytan@gmail.com">CONTACT</a></li>
+                <li><a class="contact-toggle">CONTACT</a></li>
             </ul>
         </div>
         
@@ -124,30 +124,98 @@
         
         <!-- CONTACT -->
         <div id="contact-container">
-            <a id="contact-button" href="mailto:codebytan@gmail.com">SEND ME A MESSAGE</a>
+            <span id="contact-button" class="contact-toggle transition">SEND ME A MESSAGE</span>
             <span class="contact-button-caption">CODEBYTAN@GMAIL.COM</span>
         </div>
         
+        <!-- CONTACT POP-UP -->
+        <div class="contact-more-container-bg transition"></div>
+        <div id="contact-more-container" class="transition">
+            <h1>SEND ME A MESSAGE</h1>
+            EMAIL: <a href="mailto:codebytan@gmail.com">CODEBYTAN@GMAIL.COM</a><br />
+            LINKEDIN: <a href="https://www.linkedin.com/in/thektan">LINKEDIN.COM/IN/THEKTAN</a><br />
+            <span class="back-button transition">&larr; BACK</span>
+        </div>
         
         <!-- FOOTER -->
         <div id="footer-container">
-            <a href="https://github.com/thektan/">GITHUB</a>
-            <a href="https://www.linkedin.com/in/thektan">LINKEDIN</a>
-            <a href="http://blog.ktan.me/">MY BLOG</a>
-            <span class="credits">CREATED BY KEVIN TAN</span>
+            <div class="footer-content-container">
+                <a href="https://github.com/thektan/">GITHUB</a>
+                <a href="https://www.linkedin.com/in/thektan">LINKEDIN</a>
+                <a href="http://blog.ktan.me/">MY BLOG</a>
+                <span class="credits">CREATED BY KEVIN TAN</span>
+            </div>
         </div>
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
         <script>
             $(document).ready(function ()
             {
+                // Scroll down to project section.
                 $(".projects-nav-button").click(function ()
                 {
-                        $('html, body').animate
-                        (
-                            { scrollTop: $("#project-header").offset().top }, 
-                            500
-                        );
+                    $('html, body').animate
+                    (
+                        { scrollTop: $("#project-header").offset().top }, 
+                        500
+                    );
+                });
+                
+                // Toggle contact box.
+                $('.contact-toggle').click(function()
+                {
+                    $('#contact-more-container').css(
+                        {
+                            'visibility': 'visible',
+                            'margin-top': '-200px',
+                            'opacity': '1'
+                        }
+                    );
+                    $('.contact-more-container-bg').css(
+                        {
+                            'visibility': 'visible',
+                            'opacity': '0.5'
+                        }
+                    );
+                    $("body").css('overflow', 'hidden');
+                });
+                
+                // Contact box back button.
+                $('.back-button').click(function()
+                {
+                    $('#contact-more-container').css(
+                        {
+                            'visibility': 'hidden',
+                            'margin-top': '-220px',
+                            'opacity': '0'
+                        }
+                    );
+                    $('.contact-more-container-bg').css(
+                        {
+                            'visibility': 'hidden',
+                            'opacity': '0'
+                        }
+                    );
+                    $("body").css('overflow', 'auto');
+                });
+                
+                // Clicking the back background also dismisses the contact box.
+                $('.contact-more-container-bg').click(function()
+                {
+                    $('#contact-more-container').css(
+                        {
+                            'visibility': 'hidden',
+                            'margin-top': '-220px',
+                            'opacity': '0'
+                        }
+                    );
+                    $('.contact-more-container-bg').css(
+                        {
+                            'visibility': 'hidden',
+                            'opacity': '0'
+                        }
+                    );
+                    $("body").css('overflow', 'auto');
                 });
             });
         </script>
