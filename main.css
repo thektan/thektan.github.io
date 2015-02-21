@@ -70,7 +70,6 @@ ul.navigation li a:hover {
 }
 
 ul.navigation li.current-page {
-    padding: 15px 15px;
     font-size: 16px;
     letter-spacing: 1px;
     color: #3A3F42;
