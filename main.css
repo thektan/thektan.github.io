@@ -124,13 +124,18 @@ ul.navigation li.non-current-page:hover {
 }
 
 /***** ABOUT PAGE *****/
-#about-page #header-container .title-container .title {
-    font-weight: 400;
-    font-size: 45px;
+#about-page #about-header-container {
+    width: 100%;
 }
 
-#about-page #header-container .title-container {
-    margin: 200px 0 100px 0;
+#about-page #about-header-container .about-title-container {
+    text-align: center;
+    margin: 150px 0 100px 0;
+}
+
+#about-page #about-header-container .about-title-container .title {
+    font-weight: 400;
+    font-size: 45px;
 }
 
 #about-page .content-container {
