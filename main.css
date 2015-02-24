@@ -9,7 +9,6 @@ body {
     margin: 0;
     padding: 0;
     color: #3A3F42;
-    min-width: 1050px;
 }
 
 a {
@@ -25,6 +24,10 @@ a {
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+}
+
+.float-left {
+    float: left;
 }
 
 /***** NAVIGATION *****/
@@ -43,14 +46,14 @@ ul.navigation {
     display: inline-block;
 }
 
-ul.navigation li{
+ul.navigation li {
     display: inline-block;
     margin: 15px 30px;
 }
 
 /* Fix for extra space created on first element. */
 ul.navigation li:first-of-type {
-    margin-left: 15px;
+    margin-left: -15px;
 }
 
 ul.navigation li a {
@@ -63,13 +66,10 @@ ul.navigation li a {
 
 ul.navigation li a:hover {
     color: #3493DD;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
 }
 
-ul.navigation li.current-page {
+ul.navigation span.current-page {
+    padding: 15px 15px;
     font-size: 16px;
     letter-spacing: 1px;
     color: #3A3F42;
@@ -81,10 +81,6 @@ ul.navigation li.non-current-page {
 
 ul.navigation li.non-current-page:hover {
     opacity: 1;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
 }
 
 
@@ -124,13 +120,12 @@ ul.navigation li.non-current-page:hover {
 }
 
 #about-page .content-container {
-    width: 1050px;
     margin: 0 auto;
     text-align: center;
 }
 
 #about-page .content-container img {
-    width: 1050px;
+    width: 1000px;
 }
 
 #about-page .content-container p {
@@ -143,7 +138,7 @@ ul.navigation li.non-current-page:hover {
 }
 
 
-/***** WORK *****/
+/***** PROJECTS *****/
 .project-container {
     background-color: #F7F7F7;
     padding: 100px 0 0 0;
@@ -201,10 +196,6 @@ a.project-link:visited {
 
 a.project-link:hover {
     background-color: #3493DD;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
 }
 
 .project-images-container {
@@ -219,6 +210,7 @@ a.project-link:hover {
 
 .project-images-container:nth-of-type(2n) {
     border: 5px solid #FFF;
+    border-bottom: 0;
     margin-right: 0px;
     margin-left: 75px;
 }
@@ -240,7 +232,7 @@ a.project-link:hover {
 #other-projects-container .other-project {
     display: inline-block;
     width: 300px;
-    margin: 0 15px;
+    margin: 0 15px 20px 15px;
 }
 
 #other-projects-container .other-project h2 {
@@ -390,7 +382,7 @@ a.project-link:hover {
 
 .footer-content-container {
     display: inline-block;
-    min-width: 1050px;
+    width: 100%;
     max-width: 1200px;
 }
 
@@ -405,10 +397,6 @@ a.project-link:hover {
 
 #footer-container a:hover {
     opacity: 1;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
 }
 
 .credits {
@@ -416,4 +404,103 @@ a.project-link:hover {
     float: right;
     color: #F7F7F7;
     opacity: 0.5;
+}
+
+
+
+/* Styles for smaller windows or screens */
+@media (max-width: 1100px) {
+    
+    .project-container {
+        padding: 35px 0 0 0;
+        height: 100%;
+    }
+    
+    .project-description-container {
+        text-align: center;
+        height: 100%;
+    }
+    
+    .project-images-container {
+        display: block;
+        margin: 50px auto 0 auto;
+    }
+
+    .project-images-container:nth-of-type(2n) {
+        margin: 50px auto 0 auto;
+    }
+    
+    #about-page .content-container img {
+        width: 800px;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    
+    #header-container .title-container .title { 
+        font-size: 100px; 
+    }
+
+    ul.navigation li a {
+        padding: 15px 15px;
+        font-size: 14px;
+    }
+    
+    ul.navigation span.current-page {
+        padding: 15px 15px;
+        font-size: 14px;
+    }
+    
+    #header-container .title-container .subtitle {
+        font-size: 14px;
+        letter-spacing: 2px;
+        padding: 8px 16px;
+    }
+    
+    #about-page .content-container img {
+        width: 700px;
+    }
+    
+}
+
+@media (max-width: 525px) {
+    
+    ul.navigation li {
+        margin: 10px 15px;
+    }
+    
+    ul.navigation li a {
+        padding: 5px 5px;
+    }
+    
+    .project-description-container {
+        width: 325px;
+    }
+    
+    .project-images-container,
+    .project-images-container img {
+        width: 350px;
+        height: auto;
+        margin-bottom: -5px;
+    }
+    
+    #footer-container a:link,
+    #footer-container a:active,
+    #footer-container a:visited {
+        float: none;
+    }
+
+    .credits {
+        display: block;
+        float: none;
+    }
+
+    #about-page .content-container img {
+        width: 350px;
+    }
+    
+    #about-page .content-container p {
+        width: 325px;
+    }
 }
