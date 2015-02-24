@@ -63,14 +63,14 @@ $(document).ready(function ()
         $('#contact-more-container').css(
             {
                 'visibility': 'visible',
-                'margin-top': '-200px',
+                'margin-top': '-100px',
                 'opacity': '1'
             }
         );
         $('.contact-more-container-bg').css(
             {
                 'visibility': 'visible',
-                'opacity': '0.5'
+                'opacity': '0.95'
             }
         );
         $("body").css('overflow', 'hidden');
@@ -82,7 +82,7 @@ $(document).ready(function ()
         $('#contact-more-container').css(
             {
                 'visibility': 'hidden',
-                'margin-top': '-220px',
+                'margin-top': '-120px',
                 'opacity': '0'
             }
         );
@@ -101,7 +101,7 @@ $(document).ready(function ()
         $('#contact-more-container').css(
             {
                 'visibility': 'hidden',
-                'margin-top': '-220px',
+                'margin-top': '-120px',
                 'opacity': '0'
             }
         );

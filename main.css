@@ -322,18 +322,20 @@ a.project-link:hover {
     margin-top: 10px;
 }
 
+/***** CONTACT POPUP BOX *****/
 #contact-more-container {
     display: block;
     position: fixed;
     top: 50%;
     left: 50%;
-    margin: -220px 0 0 -300px;
-    width: 500px;
-    background-color: white;
-    z-index: 99;
-    padding: 50px;
-    font-size: 16px;
+    margin: -120px 0 0 -150px;
+    width: 300px;
+    height: 200px;
+    font-size: 22px;
     color: #9CB0C0;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 99;
     visibility: hidden;
     opacity: 0;
 }
@@ -346,16 +348,9 @@ a.project-link:hover {
     top: 0;
     left: 0;
     z-index: 98;
-    background-color: black;
+    background-color: white;
     visibility: hidden;
     opacity: 0;
-}
-
-#contact-more-container h1 {
-    color: #3A3F42;
-    font-size: 32px;
-    font-weight: 400;
-    margin: 0 0 20px 0;
 }
 
 #contact-more-container a {
@@ -365,7 +360,7 @@ a.project-link:hover {
     font-size: 16px;
     letter-spacing: 1px;
     padding: 10px 20px;
-    margin: 5px 0 5px 10px;
+    margin: 5px 0;
 }
 
 #contact-more-container a:hover {
