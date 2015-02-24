@@ -1,5 +1,52 @@
 $(document).ready(function ()
 {
+    // Set the header height to the window height.
+    $('#header-container').css({ 'height': $(window).height() });
+
+    // Set title container to middle of screen.
+    $('.title-container').css(
+        {
+            'margin-top': $('#header-container').height()/2 
+                        - $('.title-container').height()/2
+        }
+    );
+
+    // When window gets resized, update height and margin of header/title.
+    $(window).resize(function () 
+    {
+        $('#header-container').css({ 'height': $(window).height() });
+
+        $('.title-container').css(
+            {
+                'margin-top': $('#header-container').height()/2 
+                            - $('.title-container').height()/2
+            }
+        );
+    });
+    
+    // Change opacity of arrow helper to scroll down if not at top of page.
+    $(window).scroll(function() 
+    {
+        if ($(window).scrollTop() > 0)
+        {
+            $('.scroll-down-arrow').css(
+                {
+                    'opacity': 0,
+                    'visibility': 'hidden'
+                }
+            );
+        }
+        else
+        {
+            $('.scroll-down-arrow').css(
+                {
+                    'opacity': 1,
+                    'visibility': 'visible'
+                }
+            );
+        }
+    });
+    
     // Scroll down to project section.
     $(".projects-nav-button").click(function ()
     {

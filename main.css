@@ -87,10 +87,12 @@ ul.navigation li.non-current-page:hover {
 /***** HEADER *****/
 #header-container {
     width: 100%;
+    min-height: 500px;
+    max-height: 800px;
+    overflow: hidden;
 }
 
 #header-container .title-container {
-    margin: 300px 0;
     text-align: center;
 }
 
@@ -108,6 +110,18 @@ ul.navigation li.non-current-page:hover {
     padding: 10px 20px;
 }
 
+.scroll-down-arrow {
+    display: block;
+    position: fixed;
+    color: #979797;
+    font-size: 32px;
+    width: 50px;
+    text-align: center;
+    margin-left: -25px;
+    left: 50%;
+    bottom: 50px;
+    opacity: 1;
+}
 
 /***** ABOUT PAGE *****/
 #about-page #header-container .title-container .title {
