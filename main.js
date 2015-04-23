@@ -1,116 +1,38 @@
-$(document).ready(function ()
+$(document).ready(function () 
 {
-    // Set the header height to the window height.
-    $('#header-container').css({ 'height': $(window).height() });
-
-    // Set title container to middle of screen.
-    $('.title-container').css(
-        {
-            'margin-top': $('#header-container').height()/2 
-                        - $('.title-container').height()/2
-        }
-    );
-
-    // When window gets resized, update height and margin of header/title.
-    $(window).resize(function () 
-    {
-        $('#header-container').css({ 'height': $(window).height() });
-
-        $('.title-container').css(
-            {
-                'margin-top': $('#header-container').height()/2 
-                            - $('.title-container').height()/2
-            }
-        );
-    });
+    // Variables for when header bar will become fixed.
+    var elementPosition = $('.title-container').offset();
+    var headerBackgroundPosition = $('#full-page-container').offset();
     
-    // Change opacity of arrow helper to scroll down if not at top of page.
-    $(window).scroll(function() 
+    /**
+     * Fixed header bar.
+     */
+    $(window).scroll(function () 
     {
-        if ($(window).scrollTop() > 0)
-        {
-            $('.scroll-down-arrow').css(
-                {
-                    'opacity': 0,
-                    'visibility': 'hidden'
-                }
-            );
+        // Fix position for "Kevin Tan."
+        if ($(window).scrollTop() + 10 > elementPosition.top) {
+            $('#main-title').css('position', 'fixed').css('top', '10px');
         }
-        else
-        {
-            $('.scroll-down-arrow').css(
-                {
-                    'opacity': 1,
-                    'visibility': 'visible'
-                }
-            );
+        else {
+            $('#main-title').css('position', 'static');
         }
-    });
-    
-    // Scroll down to project section.
-    $(".projects-nav-button").click(function ()
-    {
-        $('html, body').animate
-        (
-            { scrollTop: $("#project-header").offset().top }, 
-            500
-        );
-    });
-
-    // Toggle contact box.
-    $('.contact-toggle').click(function()
-    {
-        $('#contact-more-container').css(
-            {
-                'visibility': 'visible',
-                'margin-top': '-100px',
-                'opacity': '1'
-            }
-        );
-        $('.contact-more-container-bg').css(
-            {
-                'visibility': 'visible',
-                'opacity': '0.95'
-            }
-        );
-        $("body").css('overflow', 'hidden');
-    });
-
-    // Contact box back button.
-    $('.back-button').click(function()
-    {
-        $('#contact-more-container').css(
-            {
-                'visibility': 'hidden',
-                'margin-top': '-120px',
-                'opacity': '0'
-            }
-        );
-        $('.contact-more-container-bg').css(
-            {
-                'visibility': 'hidden',
-                'opacity': '0'
-            }
-        );
-        $("body").css('overflow', 'auto');
-    });
-
-    // Clicking the back background also dismisses the contact box.
-    $('.contact-more-container-bg').click(function()
-    {
-        $('#contact-more-container').css(
-            {
-                'visibility': 'hidden',
-                'margin-top': '-120px',
-                'opacity': '0'
-            }
-        );
-        $('.contact-more-container-bg').css(
-            {
-                'visibility': 'hidden',
-                'opacity': '0'
-            }
-        );
-        $("body").css('overflow', 'auto');
+        
+        // Fix position for contact links.
+        if ($(window).scrollTop() + 20 > elementPosition.top){
+            $('#main-links').css('position', 'fixed').css('top', '20px');
+        }
+        else {
+            $('#main-links').css('position', 'static');
+        }
+        
+        // Fix position of the header.
+        if ($(window).scrollTop() + 150 > headerBackgroundPosition.top) {
+            $('#header-container').css('position', 'fixed').css('margin-top', '-510px');
+            $('#full-page-container').css('padding-top', '500px'); // To adjust for displacement of header.
+        }
+        else {
+            $('#header-container').css('position', 'static').css('margin-top', '0');
+            $('#full-page-container').css('padding-top', '0');
+        }
     });
 });

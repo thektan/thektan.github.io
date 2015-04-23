@@ -1,155 +1,194 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Page Information
+        ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <title>Kevin Tan</title>
         <meta charset="UTF-8">
+        <meta name="description" content="Portfolio of Kevin Tan">
+        <meta name="author" content="Kevin Tan">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <!-- Favicon 
+        ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="icon" type="image/png" href="images/favicon.png">
+        
+        <!-- Font 
+        ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+        
+        <!-- CSS 
+        ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="stylesheet" type="text/css" href="main.css">
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <!-- NAVIGATION -->
-        <div id="navigation-container">
-            <ul class="navigation">
-                <li><a href="/about">ABOUT</a></li>
-                <li><a class="projects-nav-button" href="#projects">PROJECTS</a></li>
-                <li><a class="contact-toggle">CONTACT</a></li>
-            </ul>
-        </div>
-        
-        
-        <!-- HEADER -->
-        <div id="header-container">
-            <div class="title-container">
-                <div class="title">KEVIN TAN</div>
-                <div class="subtitle">WEB DESIGNER / DEVELOPER</div>
+        <!-- Header 
+        ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="header-container"> <!-- gray background color -->
+            <div id="header-content-container">
+                
+                <div class="title-container">
+                    <a href="/"><h1 id="main-title" class="top">Kevin Tan</h1></a>
+                </div>
+                
+                <div class="description-container">
+                    <h2>
+                        Web Developer and Designer<br/>
+                        B.S. Degree in Computer Science<br/>
+                        San Jose, CA 
+                    </h2>
+                </div>
+                
+                <div class="links-container">
+                    <ul id="main-links" class="top">
+                        <li><a class="navigation-link" href="https://github.com/thektan/">GitHub</a></li>
+                        <li><a class="navigation-link" href="https://www.linkedin.com/in/thektan">LinkedIn</a></li>
+                        <li><a class="navigation-link" href="mailto:codebytan@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+                
             </div>
-            <div class="scroll-down-arrow transition">&darr;</div>
+        </div>
+
+        <div id="full-page-container">
+            
+            <!-- Projects 
+            ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <div class="title-container">
+                Projects
+            </div>
+
+            <!-- SpartaSave ––––––––––––––––––––––––––––––– -->
+            <div class="project-container">
+                <a class="project-image-link" href="https://github.com/dorathiendo/SJSU-CS160-QuietCoders">
+                    <img src="images/preview-spartasave.png" alt="SpartaSave Screenshot"/>
+                </a>
+
+                <div class="project-description-container">
+                    <div class="project-description-container-left">
+                        <h4>August 2014 - December 2014</h4>
+                        <h3>SpartaSave</h3>
+                        <p>
+                            Part of a team of four that designed and implemented a web 
+                            application that allowed users to post, purchase, and search 
+                            for textbooks. Search results also returned textbooks sold 
+                            on Amazon. 
+                        </p>
+                        <a class="project-link" href="https://github.com/dorathiendo/SJSU-CS160-QuietCoders">View Code On GitHub</a>
+                    </div>
+                    <div class="project-description-container-right">
+                        <h4>Tools:</h4>
+                        <p>Java, JSP, MySQL, Apache Tomcat,  Github, HTML, CSS, Javascript</p>
+                    </div>
+                </div> <!-- End project-description-container -->
+            </div> <!-- End project-container -->
+
+            <!-- Christmas In The Park ––––––––––––––––––––– -->
+            <div class="project-container">
+                <a class="project-image-link" href="http://christmasinthepark.com/">
+                    <img src="images/preview-christmasinthepark.png" alt="Christmas In The Park Screenshot"/>
+                </a>
+
+                <div class="project-description-container">
+                    <div class="project-description-container-left">
+                        <h4>January 2013 - May 2013</h4>
+                        <h3>Christmas In The Park</h3>
+                        <p>
+                            Group project for technical writing course. Followed 
+                            Agile management as we worked with the client, defined 
+                            the scope of the project, and met their needs. Reformatted 
+                            front page and implemented an interactive sponsor page.
+                        </p>
+                        <a class="project-link" href="http://christmasinthepark.com/">View Project</a>
+                    </div>
+                    <div class="project-description-container-right">
+                        <h4>Tools:</h4>
+                        <p>HTML, CSS, Javascript</p>
+                    </div>
+                </div> <!-- End project-description-container -->
+            </div> <!-- End project-container -->
+
+            <!-- KTAN Tumblr ––––––––––––––––––––––––––––––– -->
+            <div class="project-container">
+                <a class="project-image-link" href="http://k-tan.tumblr.com/">
+                    <img src="images/preview-tumblrktan.png" alt="KTAN Tumblr Screenshot"/>
+                </a>
+
+                <div class="project-description-container">
+                    <div class="project-description-container-left">
+                        <h4>March 2012</h4>
+                        <h3>Tumblr Theme</h3>
+                        <p>
+                            Custom Tumblr theme designed and developed from scratch. 
+                            Mock-ups created in Photoshop. Implemented feature 
+                            where certain tags change the icon next to each post.
+                        </p>
+                        <a class="project-link" href="http://k-tan.tumblr.com/">View Project</a>
+                    </div>
+                    <div class="project-description-container-right">
+                        <h4>Tools:</h4>
+                        <p>HTML, CSS, Photoshop</p>
+                    </div>
+                </div> <!-- End project-description-container -->
+            </div> <!-- End project-container -->
+
+            
+            <!-- About Section 
+            –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <div class="section-container">
+                <div class="title-container">
+                    About
+                </div>
+                <div class="section-content-container">
+                    <p>
+                        Hi! I'm Kevin Tan. I recently graduated this past December 2014 from San José State 
+                        University with a B.S. Degree in Computer Science. I’ve spent a lot of my free time 
+                        designing and implementing personal websites. Along with software development, I 
+                        have a strong interest in design as well. I dive deep into the design process from 
+                        user interface and experience decisions to sketching layouts and have been turning 
+                        many mock-ups into functional websites.
+                    </p>
+                    <br/>
+                    <p>
+                        I’m currently seeking a front-end developer or web developer position and would love to hear about any available opportunities.
+                    </p>
+                </div>
+            </div>
+            
+        </div> <!-- End full-page-container -->
+        
+        <!-- Contact Section 
+        –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="contact-container">
+            <div class="section-container contact">
+                <div class="title-container">
+                    Contact
+                </div>
+                <div class="section-content-container">
+                    <div class="one-third-container">
+                        <h4>Email:</h4>
+                        <a href="mailto:codebytan@gmail.com">codebytan@gmail.com</a>
+                    </div>
+                    <div class="one-third-container">
+                        <h4>LinkedIn:</h4>
+                        <a href="https://www.linkedin.com/in/thektan">linkedin.com/in/thektan</a>
+                    </div>
+                    <div class="one-third-container">
+                        <h4>GitHub:</h4>
+                        <a href="https://github.com/thektan/">github.com/thektan</a>
+                    </div>
+                </div>
+            </div>
         </div>
         
 
-        <!-- PROJECT #1 -->
-        <div class="project-container" id="project-header">
-            <div class="project-description-container">
-                <h1>ADVENTURE ON</h1>
-                <h2>HTML, CSS, JAVASCRIPT, JQUERY, PHP</h2>
-                <p>
-                    A personal blog using Wordpress. I designed and developed a 
-                    custom responsive theme suitable for long-format posts. The 
-                    website is designed to give a focus on the photographs while 
-                    still providing text that is easy-to-read. Powered by OpenShift.
-                </p>
-                <a class="project-link" href="http://blog.ktan.me/">VIEW PROJECT &rarr;</a>
-            </div>
-            <div class="project-images-container">
-                <img src="images/adventureon-preview.jpg" />
-            </div>
-        </div>
-        
-        
-        <!-- PROJECT #2 -->
-        <div class="project-container">
-            <div class="project-description-container">
-                <h1>SPARTASAVE</h1>
-                <h2>JAVA, JSP, MYSQL, APACHE TOMCAT, GITHUB</h2>
-                <p>
-                    I was on a team of four that developed a web application 
-                    allowing users to buy and sell textbooks as well as search 
-                    textbooks with results from Amazon. I implemented Java 
-                    beans, servlets, DAO, and the MySQL database while 
-                    following the MVC design pattern.
-                </p>
-                <a class="project-link" href="https://github.com/dorathiendo/SJSU-CS160-QuietCoders">VIEW PROJECT ON GITHUB &rarr;</a>
-            </div>
-            <div class="project-images-container">
-                <img src="images/spartasave-preview.jpg" />
-            </div>
-        </div>
-        
-        
-        <!-- PROJECT #3 -->
-        <div class="project-container">
-            <div class="project-description-container">
-                <h1>PORTFOLIO SITE</h1>
-                <h2>HTML, CSS, JAVASCRIPT</h2>
-                <p>
-                    A website to showcase the projects I've worked on. It's this 
-                    site you're looking at right now! Hosted using Github pages.
-                </p>
-                <a class="project-link" href="https://github.com/thektan/thektan.github.io">VIEW PROJECT ON GITHUB &rarr;</a>
-            </div>
-            <div class="project-images-container">
-                <img src="images/portfolio-preview.jpg" />
-            </div>
-        </div>
-        
-        <!-- OTHER PROJECTS -->
-        <div id="other-projects-container">
-            <h1>OTHER PROJECTS I'VE WORKED ON</h1>
-            
-            <!-- OTHER PROJECT #1 -->
-            <a href="http://foodinmybelly.tumblr.com">
-                <div class="other-project">
-                    <h2>FOOD IN MY BELLY</h2>
-                    <h3>CREATED TUMBLR THEME</h3>
-                    <div class="other-project-image">
-                        <img src="images/foodinmybelly-preview.jpg" />
-                    </div>
-                </div>
-            </a>
-            
-            <!-- OTHER PROJECT #2 -->
-            <a href="http://k-tan.tumblr.com">
-                <div class="other-project">
-                    <h2>KTAN TUMBLR BLOG</h2>
-                    <h3>CREATED TUMBLR THEME</h3>
-                    <div class="other-project-image">
-                        <img src="images/ktantumblr-preview.jpg" />
-                    </div>
-                </div>
-            </a>
-            
-            <!-- OTHER PROJECT #3 -->
-            <a href="http://christmasinthepark.com">
-                <div class="other-project">
-                    <h2>CHRISTMAS IN THE PARK</h2>
-                    <h3>MADE LAYOUT IMPROVEMENTS</h3>
-                    <div class="other-project-image">
-                        <img src="images/christmasinthepark-preview.jpg" />
-                    </div>
-                </div>
-            </a>
-        </div>
-        
-        <!-- CONTACT -->
-        <div id="contact-container">
-            <span id="contact-button" class="contact-toggle transition">SEND ME A MESSAGE</span>
-            <span class="contact-button-caption">CODEBYTAN@GMAIL.COM</span>
-        </div>
-        
-        <!-- CONTACT POP-UP -->
-        <div class="contact-more-container-bg transition"></div>
-        <div id="contact-more-container" class="transition">
-            <a href="mailto:codebytan@gmail.com">CODEBYTAN@GMAIL.COM</a><br />
-            <a href="https://www.linkedin.com/in/thektan">LINKEDIN.COM/IN/THEKTAN</a><br />
-            <span class="back-button transition">&larr; BACK</span>
-        </div>
-        
-        <!-- FOOTER -->
-        <div id="footer-container">
-            <div class="footer-content-container">
-                <a href="https://github.com/thektan/">GITHUB</a>
-                <a href="https://www.linkedin.com/in/thektan">LINKEDIN</a>
-                <a href="http://blog.ktan.me/">MY BLOG</a>
-                <span class="credits">CREATED BY KEVIN TAN</span>
-            </div>
-        </div>
-        
+        <!-- Javascript
+        ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
         <script src="main.js"></script>
 
+        <!-- Google Analytics 
+        ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
