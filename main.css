@@ -58,11 +58,11 @@ a {
     padding-bottom: 5px;
 }
 a.navigation-link {
-    color: #FFFFFF;
+    color: #393939;
 }
 
 a.navigation-link:hover {
-    border-bottom: #FFFFFF solid 2px;
+    border-bottom: #393939 solid 2px;
 }
 
 a.project-link {
@@ -105,14 +105,14 @@ h1, h2, h3, h4, h5, p { margin: 0; font-weight: 400; }
 /* Used for title "Kevin Tan" on header. */
 h1 {
     font-size: 32px;
-    color: #FFFFFF;
+    color: #393939;
 }
 
 /* Used for description on header. */
 h2 {
     font-size: 18px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: #393939;
 }
 
 /* Used for project titles. */
@@ -154,7 +154,7 @@ p {
 #header-container {
     display: block;
     background-color: #F9F9F9;
-    background-image: linear-gradient(135deg, #0C66EC 0%, #0CCFEC 100%);
+    /*background-image: linear-gradient(135deg, #0C66EC 0%, #0CCFEC 100%);*/
     height: 500px;
     width: 100%;
     z-index: 1;
