@@ -12,9 +12,11 @@ $(document).ready(function ()
         // Fix position for "Kevin Tan."
         if ($(window).scrollTop() + 10 > elementPosition.top) {
             $('#main-title').css('position', 'fixed').css('top', '10px');
+            $('.description-container').fadeOut();
         }
         else {
             $('#main-title').css('position', 'static');
+            $('.description-container').fadeIn();
         }
 
         // Fix position for contact links.
@@ -35,4 +37,20 @@ $(document).ready(function ()
             $('#full-page-container').css('padding-top', '0');
         }
     });
+});
+
+// Smooth Scrolling from CSS-Tricks (https://css-tricks.com/snippets/jquery/smooth-scrolling/)
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
 });
